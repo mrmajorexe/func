@@ -140,11 +140,11 @@ class Fungsi{
         if($check){
             $cek = Fungsi::curl2($headers,"https://email-fake.com/$domain/$nama",false);
             //file_put_contents("mail.txt",$cek);
-            $code = Fungsi::explo('letter-spacing: 8px">','</span>',$cek);
+            //$code = Fungsi::explo('letter-spacing: 8px">','</span>',$cek);
             //if (!is_numeric($code)) {
             //    return null;
             //}
-            return $code;
+            return $cek; //$code;
         }
     
         $headers[] = "Content-Type: application/x-www-form-urlencoded; charset=UTF-8";
